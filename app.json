@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "Eco",
+    "slug": "5.Ecommerce",
+    "privacy": "public",
+    "sdkVersion": "35.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "facebookAppId": "547257085836104",
+    "facebookScheme": "fb547257085836104",
+    "facebookDisplayName": "Instore",
+    "extra": {
+      "googleAppid": {
+        "ios": "489811360014-1ukcgfsunbvf3dei5g5g8rutsc3jton4.apps.googleusercontent.com",
+        "android": "489811360014-25sbgu93blavhflhh799u8baccu5v3b1.apps.googleusercontent.com"
+      }
+    }
+  }
+}
