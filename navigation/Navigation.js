@@ -41,8 +41,8 @@ const Main = createBottomTabNavigator({
 )
 
 const Navigation = createSwitchNavigator({
-    // Splash: Splash,
-    // Login: Login,
+    Splash: Splash,
+    Login: Login,
     Main: Main
 })
 export default createAppContainer(Navigation);

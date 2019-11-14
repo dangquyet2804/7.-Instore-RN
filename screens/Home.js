@@ -16,7 +16,7 @@ const images= [
 const categories = [
   {
     id: 1,
-    title: 'Grocery',
+    title: 'Category',
     image: require('../assets/cart.png'),
   },
   {
@@ -69,7 +69,7 @@ export default class Home extends Component {
                 keyExtractor={categorie => String(categorie.id)}
                 renderItem={({item, index}) => {
                   return (
-                      <Catagory title={item.title} image={item.image} index={index}/>
+                      <Catagory title={item.title} image={item.image} index={index} onPress={() => this.props.navigation.navigate(`${item.title}`, {name: item.title})}/>
                   )
                 }}
               />

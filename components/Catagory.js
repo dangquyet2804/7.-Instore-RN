@@ -1,13 +1,15 @@
 import React from 'react'
-import { View, Text, Image, Dimensions, StyleSheet } from 'react-native'
+import { View, Text, Image, Dimensions, StyleSheet, TouchableOpacity } from 'react-native'
 const { height, width } = Dimensions.get('window');
 
-const Catagory = ({title, image, index}) => {
+const Catagory = ({title, image, index, onPress}) => {
     return (
-        <View style={[styles.container, index%3 !==0 ? {marginLeft: 2} : null]}>
-            {image ? (<Image source={image} style={{marginBottom: 20}}/>) : null}
-            <Text >{title.toUpperCase()}</Text>
-        </View>
+        <TouchableOpacity onPress={onPress}>
+            <View style={[styles.container, index%3 !==0 ? {marginLeft: 2} : null]}>
+                {image ? (<Image source={image} style={{marginBottom: 20}}/>) : null}
+                <Text >{title.toUpperCase()}</Text>
+            </View>
+        </TouchableOpacity>
     )
 }
 const styles = StyleSheet.create({
